@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="335.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.Inventory">
+    <children>
+        <ComboBox fx:id="Box" layoutX="124.0" layoutY="39.0" prefHeight="26.0" prefWidth="201.0" />
+        <Label layoutX="14.0" layoutY="39.0" prefHeight="26.0" prefWidth="109.0" text="Инветаризовать">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableI" layoutX="14.0" layoutY="77.0" prefHeight="243.0" prefWidth="403.0">
+            <columns>
+                <TableColumn fx:id="idT" prefWidth="55.800018310546875" text="id" />
+                <TableColumn fx:id="tov" prefWidth="247.39999389648438" text="Название" />
+                <TableColumn fx:id="col" prefWidth="101.20001220703125" text="Количество" />
+            </columns>
+        </TableView>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="432.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                        <MenuItem fx:id="exportW" mnemonicParsing="false" onAction="#exportWord" text="Экспорт в Word" />
+                        <MenuItem fx:id="exportE" mnemonicParsing="false" onAction="#exportExcel" text="Экспорт в Excel" />
+                        <MenuItem fx:id="print" mnemonicParsing="false" onAction="#print" text="Печать" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

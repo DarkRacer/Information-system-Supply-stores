@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dependence/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/poi-3.12-20150511.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/poi-ooxml-3.12-20150511.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/poi-ooxml-schemas-3.12-20150511.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/poi-scratchpad-3.12-20150511.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependence/xmlbeans-2.6.0.jar!/" />
+      <root url="file://$PATH_TO_FX$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PATH_TO_FX$" />
+    </SOURCES>
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
+    <jarDirectory url="file://$PATH_TO_FX$" recursive="false" type="SOURCES" />
+  </library>
+</component>

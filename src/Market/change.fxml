@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="179.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Market.Change">
+   <children>
+      <Button fx:id="change" layoutX="12.0" layoutY="138.0" mnemonicParsing="false" onAction="#change" prefHeight="30.0" prefWidth="89.0" text="Изменить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="115.0" layoutY="138.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="95.0" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idTF" layoutX="42.0" layoutY="11.0" prefHeight="26.0" prefWidth="169.0" />
+      <TextField fx:id="nameTF" layoutX="79.0" layoutY="59.0" prefHeight="26.0" prefWidth="132.0" />
+      <TableView fx:id="tableM" layoutX="217.0" layoutY="1.0" prefHeight="167.0" prefWidth="379.0">
+        <columns>
+          <TableColumn fx:id="idM" prefWidth="49.5999755859375" text="id" />
+          <TableColumn fx:id="name" prefWidth="177.20001220703125" text="Название" />
+            <TableColumn fx:id="requisites" prefWidth="154.79995727539062" text="Кол-во товара" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="11.0" prefHeight="26.0" prefWidth="32.0" text="id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="62.0" text="Название">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="103.0" text="Реквизиты">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="requisitesTF" layoutX="89.0" layoutY="100.0" prefHeight="26.0" prefWidth="121.0" />
+   </children>
+</AnchorPane>

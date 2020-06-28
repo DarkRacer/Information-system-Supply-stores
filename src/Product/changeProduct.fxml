@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="185.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.ChangeProduct">
+    <children>
+        <Button fx:id="change" layoutX="11.0" layoutY="122.0" mnemonicParsing="false" onAction="#change" prefHeight="30.0" prefWidth="89.0" text="Изменить">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="116.0" layoutY="122.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="95.0" text="Удалить">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="idTF" layoutX="80.0" layoutY="11.0" prefHeight="26.0" prefWidth="132.0" />
+        <TextField fx:id="nameTF" layoutX="80.0" layoutY="49.0" prefHeight="26.0" prefWidth="132.0" />
+        <TableView fx:id="tableP" layoutX="216.0" layoutY="1.0" prefHeight="174.0" prefWidth="435.0">
+            <columns>
+                <TableColumn fx:id="idP" prefWidth="49.5999755859375" text="id" />
+                <TableColumn fx:id="name" prefWidth="149.60003662109375" text="Название" />
+                <TableColumn fx:id="kol_tov" prefWidth="103.99996948242188" text="Кол-во товара" />
+            <TableColumn fx:id="price" prefWidth="129.60003662109375" text="Цена за единицу (р.)" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="11.0" prefHeight="26.0" prefWidth="32.0" text="id">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="11.0" layoutY="52.0" text="Название">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Label layoutX="11.0" layoutY="87.0" prefHeight="20.0" prefWidth="43.0" text="Цена">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceTF" layoutX="80.0" layoutY="84.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="195.0" layoutY="88.0" prefHeight="18.0" prefWidth="16.0" text="р." />
+    </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="173.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.AddProduct">
+   <children>
+      <Button fx:id="add" layoutX="114.0" layoutY="131.0" mnemonicParsing="false" onAction="#addp" prefHeight="26.0" prefWidth="111.0" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="156.0" text="Наименование товара">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="170.0" layoutY="15.0" prefHeight="26.0" prefWidth="173.0" />
+      <Label layoutX="14.0" layoutY="47.0" prefHeight="26.0" prefWidth="156.0" text="Единица измерения">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="unit" layoutX="170.0" layoutY="48.0" prefHeight="26.0" prefWidth="174.0" />
+      <Label layoutX="14.0" layoutY="92.0" prefHeight="26.0" prefWidth="156.0" text="Цена за единицу">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="170.0" layoutY="92.0" prefHeight="26.0" prefWidth="156.0" />
+      <Label layoutX="332.0" layoutY="92.0" prefHeight="26.0" prefWidth="18.0" text="р.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

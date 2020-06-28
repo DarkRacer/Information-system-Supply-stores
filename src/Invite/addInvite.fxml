@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="143.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Invite.AddInvite">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="22.0" prefWidth="63.0" text="Магазин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="market" layoutX="84.0" layoutY="13.0" prefWidth="150.0" />
+      <ComboBox fx:id="product" layoutX="84.0" layoutY="56.0" onAction="#tov" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="56.0" prefHeight="22.0" prefWidth="51.0" text="Товар">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="17.0" prefHeight="22.0" prefWidth="63.0" text="Доставка">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="delivery" layoutX="363.0" layoutY="15.0" prefWidth="150.0" />
+      <Label layoutX="300.0" layoutY="59.0" text="Количество">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="col" layoutX="382.0" layoutY="56.0" prefHeight="26.0" prefWidth="129.0" />
+      <Label layoutX="14.0" layoutY="94.0" prefHeight="26.0" prefWidth="121.0" text="Сумма заявки (р.):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sum" layoutX="132.0" layoutY="97.0" prefHeight="20.0" prefWidth="246.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="add" layoutX="381.0" layoutY="95.0" mnemonicParsing="false" onAction="#addI" prefHeight="30.0" prefWidth="130.0" text="Добавить заявку">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

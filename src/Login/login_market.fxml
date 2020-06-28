@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="202.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginMarket">
+    <children>
+    <Button fx:id="Tov_Base" layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#tov_base" prefHeight="29.0" prefWidth="171.0" text="Товары на базе" />
+    <Button fx:id="Market" layoutX="221.0" layoutY="14.0" mnemonicParsing="false" onAction="#market" prefHeight="29.0" prefWidth="171.0" text="Магазин" />
+    <Button fx:id="Tov_Market" layoutX="223.0" layoutY="59.0" mnemonicParsing="false" onAction="#marketbase" prefHeight="29.0" prefWidth="171.0" text="Товары в магазине" />
+    <Button fx:id="Invite" layoutX="413.0" layoutY="14.0" mnemonicParsing="false" onAction="#invite" prefHeight="29.0" prefWidth="171.0" text="Заявки" />
+    <Button fx:id="Invertariz" layoutX="413.0" layoutY="59.0" mnemonicParsing="false" onAction="#inventor" prefHeight="29.0" prefWidth="171.0" text="Инвертаризация" />
+    <Button fx:id="dob_Invite" layoutX="338.0" layoutY="106.0" mnemonicParsing="false" onAction="#add_invite" prefHeight="29.0" prefWidth="247.0" text="Добавление заявки" />
+    <Button fx:id="change_inv" layoutX="29.0" layoutY="106.0" mnemonicParsing="false" onAction="#changeinv" prefHeight="29.0" prefWidth="287.0" text="Изменение или удаление заявки" />
+    <Button fx:id="deliverybutton" layoutX="29.0" layoutY="59.0" mnemonicParsing="false" onAction="#deliv" prefHeight="29.0" prefWidth="171.0" text="Способы доставки" />
+    <Button fx:id="exitB" layoutX="482.0" layoutY="175.0" mnemonicParsing="false" onAction="#exit" text="Выйти из аккаунта" />
+    </children>
+</AnchorPane>
